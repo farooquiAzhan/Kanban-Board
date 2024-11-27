@@ -1,0 +1,49 @@
+.kanban-board {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .ticket {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  

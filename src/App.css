@@ -1,0 +1,143 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Dropdowns Styling */
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.display-btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adds space between the icon and the text */
+}
+
+.display-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.display-btn span {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+.dropdown {
+  width: 200px;
+}
+
+.dropdown > div {
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+/* Kanban Board Styling */
+.kanban-board {
+  display: flex;
+  flex-wrap: wrap; /* Allow the columns to wrap to the next line if necessary */
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 20px 10px;
+  overflow-x: auto; /* Horizontal scrolling for overflow */
+  max-width: 100%;
+}
+
+.kanban-column {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.kanban-column h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #444;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  text-transform: capitalize; /* Ensures each word starts with a capital letter */
+}
+
+
+.kanban-column-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Task Card Styling */
+.kanban-card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kanban-card h3 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+.kanban-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.task-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+/* Scrollable Columns */
+.kanban-board::-webkit-scrollbar {
+  height: 8px;
+}
+
+.kanban-board::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.kanban-board::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
